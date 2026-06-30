@@ -1,0 +1,37 @@
+body {
+    background-image: url("website background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: #d6c615;
+    margin-left: 20px;
+    top: -20px;
+    text-shadow: 2px 2px black;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    text-wrap: pretty;
+    font-size: 20px;
+    word-wrap: break-word;
+    word-break: normal;
+
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: auto;
+}
