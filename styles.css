@@ -29,9 +29,24 @@ p {
 }
 
 .img-container {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 600px;
-    height: auto;
+    height: 300px;
+}
+
+nav a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+
+}
+
+nav {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #a9c5f5;
+    margin-top: -35px;
 }
