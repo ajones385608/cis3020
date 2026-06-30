@@ -50,3 +50,13 @@ nav {
     background-color: #a9c5f5;
     margin-top: -35px;
 }
+
+.footer-all {
+    display: flex;
+    justify-content: flex-end;
+    background-color:#a9c5f5;
+    font-family: sans-serif;
+    align-items: left;
+    font-size: 12px;
+    margin-top: auto;
+}
