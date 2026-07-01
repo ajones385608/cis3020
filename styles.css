@@ -29,11 +29,15 @@ p {
 }
 
 .img-container {
-    box-sizing: border-box;
     display: flex;
+    width: 100%;
     justify-content: center;
-    width: 600px;
-    height: 300px;
+}
+
+.img-container img{
+    width: 400px;
+    height: 300px
+    
 }
 
 nav a {
