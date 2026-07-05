@@ -41,6 +41,7 @@ p {
     margin-top: 30px;
     border: 7px solid #d6c615;
     border-radius: 10px;
+    box-shadow: 2px 2px black;
 }
 
 nav a {
@@ -124,4 +125,56 @@ h3 {
     color: #d6c615;
     text-align: center;
     margin-top: 15px;
+}
+
+.portfolio-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.portfolio-img img {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 7px solid #d6c615;
+    border-radius: 50%;
+    box-shadow: 2px 2px black;
+}
+.portfolio-fxtxt {
+    text-shadow: 2px 2px 10px #025efc;
+    letter-spacing: 3px;
+}
+.css-showcase {
+    display: flex;
+    gap: 15px;
+}
+.showcase-img {
+    display: flex;
+}
+.showcase-img img {
+    max-width:100%
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 7px solid #d6c615;
+    box-shadow: 2px 2px black;
+    filter: sepia(40%);
+}
+.showcase-gradient {
+    width: 200px;
+    height: 200px;
+    background: #025EFC;
+background: linear-gradient(90deg, rgba(2, 94, 252, 1) 0%, rgba(169, 197, 245, 1) 50%, rgba(214, 198, 21, 1) 100%);
+}
+
+@keyframes hueChange {
+    from {background-color: blue;}
+    to {background-color: red;}
+}
+.color-changetxt {
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    animation-name: hueChange;
+    animation-duration: 5s;
 }
