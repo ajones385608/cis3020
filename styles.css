@@ -46,7 +46,8 @@ p {
 }
 
 nav a {
-    display: inline-block;
+    display: flex;
+    flex: box;
     text-align: center;
     padding: 10px 20px;
     
@@ -126,6 +127,8 @@ h3 {
     color: #d6c615;
     text-align: center;
     margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio-img {
@@ -177,7 +180,7 @@ background: linear-gradient(90deg, rgba(2, 94, 252, 1) 0%, rgba(169, 197, 245, 1
     height: 40px;
     background-color: blue;
     animation-name: hueChange;
-    animation-duration: 5s;
+    animation-duration: 10s;
 }
 .transition-block {
     width: 150px;
@@ -231,5 +234,18 @@ ul {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14pt;
     color: beige;
+   list-style-type: disc;
 
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+ol {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    color: beige;
 }
