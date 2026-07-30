@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <main>
     <header>
        <h1> Magic Card </h1>
        <div class="nav-bar">
@@ -25,51 +26,71 @@
     <h2> Instructions </h2>
     <p>
     Think of a number between 1 and 63. Look at the six cards below and check the box for every card that has your number.
-    Click calculate total to see some magic!
+    Click calculate number to see some magic!
     </p>
     </section>
     <section class="card-grid">
-        <div class="card-containter">
+        <div class="card-container">
         <img src="C:\Users\apooh\git\cis3020-1\mystery-card-1.gif" alt="Magic Card 1">
         <label><input type="checkbox" id="card1">My number is on this card</label>
     </div>
-    <div class="card-containter">
+    <div class="card-container">
         <img src="mystery-card-2.gif" alt="Magic Card 2">
         <label><input type="checkbox" id="card2">My number is on this card</label>
     </div>
-    <div class="card-containter">
+    <div class="card-container">
         <img src="C:\Users\apooh\git\cis3020-1\mystery-card-3.gif" alt="Magic Card 3">
         <label><input type="checkbox" id="card3">My number is on this card</label>
     </div>
-    <div class="card-containter">
+    <div class="card-container">
         <img src="C:\Users\apooh\git\cis3020-1\mystery-card-4.gif" alt="Magic Card 4">
         <label><input type="checkbox" id="card4">My number is on this card</label>
     </div>
-    <div class="card-containter">
+    <div class="card-container">
         <img src="C:\Users\apooh\git\cis3020-1\mystery-card-5.gif" alt="Magic Card 5">
         <label><input type="checkbox" id="card5">My number is on this card</label>
     </div>
-<div class="card-containter">
+<div class="card-container">
         <img src="C:\Users\apooh\git\cis3020-1\mystery-card-6.gif" alt="Magic Card 6">
         <label><input type="checkbox" id="card6">My number is on this card</label>
     </div>
     </section>
     <section class="controls">
-        <button onclick="calculateNumber()">Calculate Number</button>
+        <button id="calc-btn">Calculate Number</button>
         <div id="result"></div>
     </section>
     <section>
         <h2>Reflection</h2>
         <p>
-        reflection - fifth harmony
+        I learned a lot while creating this game. To start, I learned and experimented with JavaScript for the first time.
+        It's very similar to Java, so it wasn't completely new to me. I also learned how a game is structured with JavaScipt and how it 
+        gets tied into the main HTML file. One challenge I faced was understanding the logic behind the game. I've never played the Magic card
+        game so I had to do research on how it worked and how I would code it. JavaScript is different from HTML and CSS because it controls the logic
+        and how a webpage processes input. 
+
         </p>
     </section>
     <section>
     <h2>JavaScript Code Walkthrough</h2>
     <p> 
-        code Walkthrough
+       This game is a recreation of the Magic Card game. The purpose of this game is to allow users to think of a secret number between 1 and 63 and select the cards where it appears.
+       The user interacts with the page by clicking checkboxes underneath the cards and clicking the calculate button. The variables are used as references to the HTML checkbox elements,
+       the output text container, and a total that is set to 0. The function for this game is called calculateNumber and it stores all the logic. Inside of the function are if statements
+       that check the state of each checkbox. If a card is checked, the script adds to the running total by the card's unique value of 1, 2, 4, 8, 16, or 32. The event listener connects the function
+       to the button's click action, which makes the program get the input. Lastly, the program calculates the total and displays it on the page.
     </p>
     </section>
+</main>
+
+<script src="game.js"></script>
+
+</body>
+<footer class="footer-all">
+            <p> Aiden Jones
+            ajones385608@nsula.edu
+            Last Edited: 7/30/2026 </p>
+        </footer>
+
 
 
    
